@@ -1,0 +1,30 @@
+{
+  "ModId": "DSTS.RandomizedDigivolutionReplacer",
+  "ModName": "Randomized Digivolution Sound Replacer",
+  "ModAuthor": "Dodowingster",
+  "ModVersion": "1.0.0",
+  "ModDescription": "Randomizes the Digivoltion Track with multiple Digivolution songs from the Anime but vocal-less and from the PS1 Titles",
+  "ModDll": "",
+  "ModIcon": "Finally-digivolution tracks.png",
+  "ModR2RManagedDll32": "",
+  "ModR2RManagedDll64": "",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "DSTS.RandomizedDigivolutionReplacer.ReleaseMetadata.json",
+  "PluginData": {},
+  "IsUniversalMod": false,
+  "ModDependencies": [
+    "DSTS.ModLoader",
+    "DSTS.RyoFramework",
+    "Ryo.Reloaded"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [
+    "digimon story time stranger.exe"
+  ],
+  "ProjectUrl": ""
+}
