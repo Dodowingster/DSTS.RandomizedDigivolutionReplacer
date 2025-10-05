@@ -5,7 +5,7 @@
   "ModVersion": "1.0.0",
   "ModDescription": "Randomizes the Digivoltion Track with multiple Digivolution songs from the Anime but vocal-less and from the PS1 Titles",
   "ModDll": "",
-  "ModIcon": "Finally-digivolution tracks.png",
+  "ModIcon": "Thumbnail.png",
   "ModR2RManagedDll32": "",
   "ModR2RManagedDll64": "",
   "ModNativeDll32": "",
@@ -15,7 +15,75 @@
   "HasExports": null,
   "IsLibrary": false,
   "ReleaseMetadataFileName": "DSTS.RandomizedDigivolutionReplacer.ReleaseMetadata.json",
-  "PluginData": {},
+  "PluginData": {
+    "GitHubDependencies": {
+      "IdToConfigMap": {
+        "DSTS.ModLoader": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "DSTS.ModLoader",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "DSTS.ModLoader.ReleaseMetadata.json"
+        },
+        "DSTS.RyoFramework": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "DSTS.RyoFramework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "DSTS.RyoFramework.ReleaseMetadata.json"
+        },
+        "Ryo.Reloaded": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "Ryo",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Ryo.Reloaded.ReleaseMetadata.json"
+        },
+        "MVGL.FileLoader.Reloaded": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "MVGL.FileLoader",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "MVGL.FileLoader.Reloaded.ReleaseMetadata.json"
+        },
+        "Reloaded.Memory.SigScan.ReloadedII": {
+          "Config": {
+            "UserName": "Reloaded-Project",
+            "RepositoryName": "Reloaded.Memory.SigScan",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Memory.SigScan.ReloadedII.ReleaseMetadata.json"
+        },
+        "reloaded.sharedlib.hooks": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "Reloaded.SharedLib.Hooks.ReloadedII",
+            "UseReleaseTag": true,
+            "AssetFileName": "reloaded.sharedlib.hooks.zip"
+          },
+          "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
+        },
+        "SharedScans.Reloaded": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "SharedScans",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "SharedScans.Reloaded.ReleaseMetadata.json"
+        }
+      }
+    }
+  },
   "IsUniversalMod": false,
   "ModDependencies": [
     "DSTS.ModLoader",
