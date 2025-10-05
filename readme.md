@@ -1,6 +1,6 @@
 **Do your part and vote for [Digimon World GOG Dreamlist](https://www.gog.com/dreamlist/game/digimon-world-1999) to preserve literally the best game of all time on PC.**
 
-![img-1](/Finally-digivolution%20tracks.png)
+![img-1](/Thumbnail.png)
 
 -----
 
