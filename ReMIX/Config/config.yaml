@@ -1,0 +1,63 @@
+constants:
+    RYO_API: Ryo.Interfaces.IRyoApi
+    FS_API: RemixToolkit.Interfaces.IFileSystem
+
+settings:
+    - id: longDigivolve_enabled
+      type: toggle
+      default: true
+      name: Enable Digimon Long Digivolution Track Replacement
+      category: Digimon Long Digivolution
+      description: Enable or disable the replacement of the long Digivolution track with a random track from the long Digivolution track list.
+
+    - id: long_bgm_volume
+      type: number
+      default: 2
+      name: Digivolution Long BGM Volume
+      category: Digimon Long Digivolution
+      description: Volume for Unskipped Digivolution Track  (Range from 1 to 9, where 9 is full volume).
+
+    - id: shortDigivolution_enabled
+      type: toggle
+      default: true
+      name: Enable Digimon Short Digivolution Track Replacement
+      category: Digimon Short Digivolution
+      description: Enable or disable the replacement of the short Digivolution track with a random track from the short Digivolution track list.
+
+      settings:
+    - id: short_bgm_volume
+      type: number
+      default: 2
+      name: Digivolution Short BGM Volume
+      category: Digimon Short Digivolution
+      description: Volume for Skipped Digivolution Track  (Range from 1 to 9, where 9 is full volume).
+
+actions:
+    - using: '{FS_API}'
+      if: 
+      run: WriteFile
+      with:
+        - '{ModDir}/long/se/se050.acb/500008.cue/config.yaml'
+        - |
+          volume: 0.{long_bgm_volume}
+
+    - using: '{FS_API}'
+      run: WriteFile
+      with:
+        - '{ModDir}/short/se/se050.acb/500009.cue/config.yaml'
+        - |
+          volume: 0.{short_bgm_volume}
+
+    - using: '{RYO_API}'
+      if: longDigivolution_enabled
+      run: AddAudioPath
+      with:
+        - '{ModDir}/long/'
+        - null
+
+    - using: '{RYO_API}'
+      if: shortDigivolution_enabled
+      run: AddAudioPath
+      with:
+        - '{ModDir}/short/'
+        - null

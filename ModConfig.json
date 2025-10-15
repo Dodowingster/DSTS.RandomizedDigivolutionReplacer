@@ -2,9 +2,9 @@
   "ModId": "DSTS.RandomizedDigivolutionReplacer",
   "ModName": "Randomized Digivolution Sound Replacer",
   "ModAuthor": "Dodowingster",
-  "ModVersion": "1.0.0",
+  "ModVersion": "1.1",
   "ModDescription": "Randomizes the Digivoltion Track with multiple Digivolution songs from the Anime but vocal-less and from the PS1 Titles",
-  "ModDll": "",
+  "ModDll": "RemixToolkit.HostMod.dll",
   "ModIcon": "Thumbnail.png",
   "ModR2RManagedDll32": "",
   "ModR2RManagedDll64": "",
@@ -92,6 +92,7 @@
   "ModDependencies": [
     "DSTS.ModLoader",
     "DSTS.RyoFramework",
+    "RemixToolkit.Reloaded",
     "Ryo.Reloaded"
   ],
   "OptionalDependencies": [],
