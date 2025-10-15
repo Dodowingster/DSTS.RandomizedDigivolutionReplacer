@@ -49,7 +49,7 @@ actions:
           volume: 0.{short_bgm_volume}
 
     - using: '{RYO_API}'
-      if: longDigivolution_enabled
+      if: longDigivolve_enabled
       run: AddAudioPath
       with:
         - '{ModDir}/long/'
